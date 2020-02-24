@@ -9,6 +9,7 @@ Contract.make {
         url("/producerservice/acceleratorobject")
     }
     response {
+        headers {header 'Content-Type': 'application/json;charset=UTF-8'}
         body("{\"acceleratorObject\" : \"nicevalue\"}")
         status 200
     }
